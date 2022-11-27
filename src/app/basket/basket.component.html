@@ -1,18 +1,8 @@
 <div class="row mt-4">
   <div class="col-8">
     <h3>Carro</h3>
-    <div class="border rounded">
-      <div class="p-3 d-flex justify-content-between">
-        <div>
-          <p class="text-muted">LG</p>
-          <p class="text-muted">Código: 882260642</p>
-          <p>Smart TV 65</p>
-        </div>
-        <div>
-          <p>219.96</p>
-        </div>
-      </div>
-    </div>
+    <app-product-cart *ngFor="let p of cart.productsList" [product]="p">
+    </app-product-cart>
   </div>
   <div class="col-4">
     <h3>Resumen de la orden</h3>
