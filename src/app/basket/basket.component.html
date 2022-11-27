@@ -19,12 +19,12 @@
     <div class="border rounded p-3 row">
       <p class="text-muted">Envío a domicilio no incluido</p>
       <div class="d-flex justify-content-between">
-        <p class="fw-bold">Productos(1)</p>
+        <p class="fw-bold">Productos({{cart.productsList.length}})</p>
         <p>219.96</p>
       </div>
       <div class="d-flex justify-content-between">
         <p class="fw-bold">Total</p>
-        <p>219.96</p>
+        <p>{{cart.totalPrice}}</p>
 
       </div>
       <a class="btn btn-primary" routerLink="/checkout/delivery">Continuar compra</a>
