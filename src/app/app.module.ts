@@ -8,6 +8,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { BasketComponent } from './basket/basket.component';
 import { DeliveryComponent } from './delivery/delivery.component';
 import { PaymentComponent } from './payment/payment.component';
+import { CartService } from './cart.service';
 
 
 const appRoutes : Routes = [
@@ -30,7 +31,9 @@ const appRoutes : Routes = [
     RouterModule.forRoot(appRoutes),
     HttpClientModule
   ],
-  providers: [],
+  providers: [
+    CartService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
