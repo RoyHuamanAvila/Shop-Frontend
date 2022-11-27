@@ -7,12 +7,14 @@ import { HomeComponent } from './home/home.component';
 import { Routes, RouterModule } from '@angular/router';
 import { BasketComponent } from './basket/basket.component';
 import { DeliveryComponent } from './delivery/delivery.component';
+import { PaymentComponent } from './payment/payment.component';
 
 
 const appRoutes : Routes = [
   {path: '', component: HomeComponent},
   {path: 'checkout/basket', component: BasketComponent},
-  {path: 'checkout/delivery', component: DeliveryComponent}
+  {path: 'checkout/delivery', component: DeliveryComponent},
+  {path: 'checkout/payment', component: PaymentComponent}
 ]
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ const appRoutes : Routes = [
     ProductCardComponent,
     HomeComponent,
     BasketComponent,
-    DeliveryComponent
+    DeliveryComponent,
+    PaymentComponent
   ],
   imports: [
     BrowserModule,
