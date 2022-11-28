@@ -10,6 +10,8 @@ import { DeliveryComponent } from './delivery/delivery.component';
 import { PaymentComponent } from './payment/payment.component';
 import { CartService } from './cart.service';
 import { ProductCartComponent } from './product-cart/product-cart.component';
+import { OrderResumeComponent } from './order-resume/order-resume.component';
+import { LineOrderComponent } from './line-order/line-order.component';
 
 
 const appRoutes : Routes = [
@@ -26,7 +28,9 @@ const appRoutes : Routes = [
     BasketComponent,
     DeliveryComponent,
     PaymentComponent,
-    ProductCartComponent
+    ProductCartComponent,
+    OrderResumeComponent,
+    LineOrderComponent
   ],
   imports: [
     BrowserModule,
